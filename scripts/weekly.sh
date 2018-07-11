@@ -14,7 +14,8 @@ chmod -R 755 ${VAGRANT_DIR}/logs/$NOW
     for i in "${IMAGES[@]}"
     do
     if [ -n "${i}" ]; then
-      docker-companion squash --remove ${i}
+      # Disabled while breaking SCR builds
+      #docker-companion squash --remove ${i}
     fi
     done
 
